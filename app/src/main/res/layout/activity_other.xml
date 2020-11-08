@@ -4,59 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OtherActivity">
+    tools:context=".OtherActivity"
+    android:background="@drawable/bg2">>
+
 
     <Button
         android:id="@+id/ViewWeb"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="140dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:backgroundTintMode="add"
         android:text="Google Chrome"
+        android:textColorLink="#1C1717"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="OnClick" />
 
     <Button
-        android:id="@+id/createContact"
-        android:layout_width="wrap_content"
+        android:id="@+id/sms"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="412dp"
-        android:text="New Contact"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <Button
-        android:id="@+id/downloads"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="40dp"
-        android:text="Downloads"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/btn_bg"
+        android:text="Send A Text Message"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/settings" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
+        android:id="@+id/Insta"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="508dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/btn_bg"
+        android:text="Instagram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="48dp"
-        android:text="Button"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/btn_bg"
+        android:text="Facebook"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/createContact" />
+        app:layout_constraintTop_toBottomOf="@+id/sms" />
 
     <Button
         android:id="@+id/settings"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/btn_bg"
         android:text="Settings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ViewWeb" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
